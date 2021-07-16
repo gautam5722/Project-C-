@@ -1,0 +1,169 @@
+ #include <iostream>
+#include<conio.h>
+using namespace std;
+main()
+{
+    int purchase_pizza=0,purchase_burger=0,purchase_samosha=0,purchase_momos=0,
+    purchase_icecream=0,purchase_colddrink=0;
+
+    int sell_pizza=0,sell_burger=0,sell_samosha=0,sell_momos=0,sell_icecream=0,sell_colddrink=0;
+
+    int pizza=0,burger=0,samosha=0,momos=0,icecream=0,colddrink=0;
+
+    int choice,quantity;
+
+    cout << "\t\tStock add In Shop : "<<endl;
+    cout << "\t\tNumber Of Pizza   : ";
+    cin >> purchase_pizza;
+    cout << "\t\tNumber Of Burger  : ";
+    cin >> purchase_burger;
+    cout << "\t\tNumber Of Samosha : ";
+    cin >> purchase_samosha;
+    cout << "\t\tNumber Of Momos   : ";
+    cin >> purchase_momos;
+    cout << "\t\tNumber Of IceCream: ";
+    cin >> purchase_icecream;
+    cout << "\t\tNumber Of ColdDrink (Fizz) : ";
+    cin >> purchase_colddrink;
+    customerDemand:
+    system("cls");
+    cout << "\t\tThis is all iteam Available in My Shop: "<<endl;
+    cout<<"\n\t\tPress 1 to order Pizza"<<endl;
+    cout<<"\n\t\tPress 2 to order Burger"<<endl;
+    cout<<"\n\t\tPress 3 to order Samosha"<<endl;
+    cout<<"\n\t\tPress 4 to order Momos"<<endl;
+    cout<<"\n\t\tPress 5 to order IceCream"<<endl;
+    cout<<"\n\t\tPress 6 to order ColdDrink (Fizz) "<<endl;
+    cout<<"\n\t\tPress 7 to Chek Details "<<endl;
+    cout << "\n\t\tPress 8 to Exit"<<endl;
+    cout << "\n\t\tEnter Your Choice: ";
+    cin >> choice;
+    switch (choice)
+    {
+    case 1:
+    cout << "\t\tEnter Quantity For Pizza Purchasing : ";
+    cin >> quantity;
+    if (purchase_pizza - sell_pizza >= quantity)
+    {
+        sell_pizza += quantity;
+        pizza += quantity * 199;
+        cout<<"\t\tYour Order is Processing...."<<endl;
+        cout<<"\t\t\t"<<quantity <<" Pizza Order Succesful... Thank You !!! ";
+    }
+    else
+    cout << "\t\tSorry" << purchase_pizza - sell_pizza << "\t\tPizza Remaining in Resturent";
+        break;
+    case 2:
+    cout << "\t\tEnter Burger Quantity : ";
+    cin >> quantity;
+    if (purchase_burger - sell_burger >= quantity)
+    {
+        sell_burger += quantity;
+        burger += quantity * 149;
+        cout<<"\t\tYour Order is Processing...."<<endl;
+        cout<<"\t\t\t"<<quantity <<" Burger Order Succesful.. Thank You!!";
+    }
+    else
+    cout << "\t\tSorry" << purchase_burger - sell_burger << "burger Remaining in Resturent";
+        break;
+    case 3:
+         cout << "\t\tEnter Samosha Quantity : ";
+    cin >> quantity;
+    if (purchase_samosha - sell_samosha >= quantity)
+    {
+        sell_samosha += quantity;
+        samosha += quantity * 10;
+        cout<<"\t\tYour Order is Processing...."<<endl;
+        cout<<"\t\t\t"<<quantity <<" Samosha Order Succesful... Thank You !!! ";
+    }
+    else
+    cout << "Sorry" << purchase_samosha - sell_samosha << "Samosha Remaining in Resturent";
+        break;
+    case 4:
+        cout << "\t\tEnter momos Quantity : ";
+    cin >> quantity;
+    if (purchase_momos - sell_momos >= quantity)
+    {
+        sell_momos += quantity;
+        momos += quantity * 5;
+        cout<<"\t\tYour Order is Processing...."<<endl;
+        cout<<"\t\t\t"<<quantity <<" Momos Order Succesful... Thank You !!! ";
+    }
+    else
+    cout << "Sorry" << purchase_momos - sell_momos << "Momos Remaining in Resturent";
+        break;
+    case 5:
+        cout << "\t\tEnter icecream Quantity : ";
+    cin >> quantity;
+    if (purchase_icecream - sell_icecream >= quantity)
+    {
+        sell_icecream += quantity;
+        icecream += quantity * 49;
+        cout<<"\t\tYour Order is Processing...."<<endl;
+        cout<<"\t\t\t"<<quantity <<" IceCream Order Succesful... Thank You !!! ";
+    }
+    else
+    cout << "Sorry" << purchase_icecream - sell_icecream << "IceCream Remaining in Resturent";
+        break;
+    case 6:
+        cout << "\t\tEnter ColdDrink (Fizz) Quantity : ";
+    cin >> quantity;
+    if (purchase_colddrink - sell_colddrink >= quantity)
+    {
+        sell_colddrink += quantity;
+        colddrink += quantity * 49;
+        cout<<"\t\tYour Order is Processing...."<<endl;
+        cout<<"\t\t\t"<<quantity <<" ColdDrink (Fizz) Order Succesful... Thank You !!! ";
+    }
+    else
+    cout << "Sorry" << purchase_icecream - sell_icecream << "ColdDrink(Fizz) Remaining in Resturent";
+        break;
+    case 7:
+        system("cls");
+        cout << "\t\t\t@@@ Pizza Details @@@ "<<endl;
+        cout<< "\n\t\t\tPurchase Pizza Quantity : " << purchase_pizza<<endl;
+        cout<< "\n\t\t\tsales Pizza Quantity : " << sell_pizza<<endl;
+        cout<< "\n\t\t\tRemaining Pizza Quantity : " << purchase_pizza - sell_pizza<<endl;
+        cout<< "\n\t\t\tTotal Pizza Price in a Day : " << pizza<<endl;
+
+        cout << "\n\t\t\t @@@ Burger Details @@@ "<<endl;
+        cout<< "\n\t\t\tPurchase Burger Quantity : " << purchase_burger<<endl;
+        cout<< "\n\t\t\tsales Burger Quantity : " << sell_burger<<endl;
+        cout<< "\n\t\t\tRemaining Burger Quantity : " << purchase_burger - sell_burger<<endl;
+        cout<< "\n\t\t\tTotal Burger Price in a Day : " << burger<<endl;
+
+        cout << "\n\t\t\t @@@ Samosha Details @@@ "<<endl;
+        cout<< "\n\t\t\tPurchase Samosha Quantity : " << purchase_samosha<<endl;
+        cout<< "\n\t\t\tSales Samosha Quantity : " << sell_samosha<<endl;
+        cout<< "\n\t\t\tRemaining Samosha Quantity : " << purchase_samosha - sell_samosha<<endl;
+        cout<< "\n\t\t\tTotal Samosha Price in a Day : " << samosha<<endl;
+
+        cout << "\n\t\t\t @@@ Momos Details @@@ "<<endl;
+        cout<< "\n\t\t\tPurchase Momos Quantity : " << purchase_momos<<endl;
+        cout<< "\n\t\t\tSales Momos Quantity : " << sell_momos<<endl;
+        cout<< "\n\t\t\tRemaining Momos Quantity : " << purchase_momos - sell_momos<<endl;
+        cout<< "\n\t\t\tTotal Momos Price in a Day : " << momos<<endl;
+
+        cout << "\n\t\t\t @@@ IceCream Details @@@"<<endl;
+        cout<< "\n\t\t\tPurchase IceCream Quantity : " << purchase_icecream<<endl;
+        cout<< "\n\t\t\tSales IceCream Quantity : " << sell_icecream<<endl;
+        cout<< "\n\t\t\tRemaining IceCream Quantity : " << purchase_icecream - sell_icecream<<endl;
+        cout<< "\n\t\t\tTotal IceCream Price in a Day : " << icecream<<endl;
+
+        cout << "\n\t\t\t @@@ ColdDrink (Fizz) Details @@@"<<endl;
+        cout<< "\n\t\t\tPurchase ColdDrink (Fizz) Quantity : " << purchase_colddrink<<endl;
+        cout<< "\n\t\t\tSales ColdDrink (Fizz) Quantity : " << sell_colddrink<<endl;
+        cout<< "\n\t\t\tRemaining ColdDrink (Fizz) Quantity : " << purchase_colddrink - sell_colddrink<<endl;
+        cout<< "\n\t\t\tTotal ColdDrink (Fizz) Price in a Day : " << colddrink<<endl;
+        cout <<"\n\t\t\tTotal Day Price : " <<pizza+burger+samosha+momos+icecream+colddrink<<endl;
+        break;
+    case 8:
+        exit(0);
+        break;
+    default:
+        cout << "Invalid value .. Please Try Again : ";
+        break;
+    }
+    getch();
+    goto customerDemand;
+}
