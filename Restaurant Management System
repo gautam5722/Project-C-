@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 #include<conio.h>
 using namespace std;
 main()
@@ -51,7 +51,7 @@ main()
         cout<<"\t\t\t"<<quantity <<" Pizza Order Succesful... Thank You !!! ";
     }
     else
-    cout << "\t\tSorry" << purchase_pizza - sell_pizza << "\t\tPizza Remaining in Resturent";
+    cout << "\t\tSorry Only " << purchase_pizza - sell_pizza << " Pizza Remaining in Resturent";
         break;
     case 2:
     cout << "\t\tEnter Burger Quantity : ";
@@ -64,7 +64,7 @@ main()
         cout<<"\t\t\t"<<quantity <<" Burger Order Succesful.. Thank You!!";
     }
     else
-    cout << "\t\tSorry" << purchase_burger - sell_burger << "burger Remaining in Resturent";
+    cout << "\t\tSorry Only " << purchase_burger - sell_burger << " burger Remaining in Resturent";
         break;
     case 3:
          cout << "\t\tEnter Samosha Quantity : ";
@@ -77,7 +77,7 @@ main()
         cout<<"\t\t\t"<<quantity <<" Samosha Order Succesful... Thank You !!! ";
     }
     else
-    cout << "Sorry" << purchase_samosha - sell_samosha << "Samosha Remaining in Resturent";
+    cout << "\t\tSorry Only " << purchase_samosha - sell_samosha << " Samosha Remaining in Resturent";
         break;
     case 4:
         cout << "\t\tEnter momos Quantity : ";
@@ -90,7 +90,7 @@ main()
         cout<<"\t\t\t"<<quantity <<" Momos Order Succesful... Thank You !!! ";
     }
     else
-    cout << "Sorry" << purchase_momos - sell_momos << "Momos Remaining in Resturent";
+    cout << "\t\tSorry Only " << purchase_momos - sell_momos << " Momos Remaining in Resturent";
         break;
     case 5:
         cout << "\t\tEnter icecream Quantity : ";
@@ -103,7 +103,7 @@ main()
         cout<<"\t\t\t"<<quantity <<" IceCream Order Succesful... Thank You !!! ";
     }
     else
-    cout << "Sorry" << purchase_icecream - sell_icecream << "IceCream Remaining in Resturent";
+    cout << "\t\tSorry Only " << purchase_icecream - sell_icecream << " IceCream Remaining in Resturent";
         break;
     case 6:
         cout << "\t\tEnter ColdDrink (Fizz) Quantity : ";
@@ -116,7 +116,7 @@ main()
         cout<<"\t\t\t"<<quantity <<" ColdDrink (Fizz) Order Succesful... Thank You !!! ";
     }
     else
-    cout << "Sorry" << purchase_icecream - sell_icecream << "ColdDrink(Fizz) Remaining in Resturent";
+    cout << "\t\tSorry Only " << purchase_icecream - sell_icecream << " ColdDrink(Fizz) Remaining in Resturent";
         break;
     case 7:
         system("cls");
